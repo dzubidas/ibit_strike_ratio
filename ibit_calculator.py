@@ -39,8 +39,8 @@ def import_sheets_modules():
 # Configuration
 class Config:
     CREDENTIALS_FILE = os.getenv('GOOGLE_CREDENTIALS_FILE', 'service-account-key.json')
-    SHEET_ID = os.getenv('GOOGLE_SHEET_ID', 'your_google_spreadsheet_id')
-    WORKSHEET_ID = int(os.getenv('GOOGLE_WORKSHEET_ID', 'your_google_worksheet_id'))
+    SHEET_ID = os.getenv('GOOGLE_SHEET_ID')
+    WORKSHEET_ID = int(os.getenv('GOOGLE_WORKSHEET_ID'))
 
 class SheetsManager:
     """Google Sheets connection and data management"""
